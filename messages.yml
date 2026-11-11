@@ -1,0 +1,464 @@
+menu:
+  navigation:
+    previous_label: Предыдущая страница
+    next_label: Следующая страница
+    previous_arrow: '<<'
+    next_arrow: '>>'
+    left_click: 'Левый клик: 1 страница'
+    right_click: 'Правый клик: 5 страниц'
+    no_page: Страница недоступна.
+  click_to_claim: Нажмите, чтобы забрать
+  fe:
+    title_category: 'Запретные: {category}'
+    title_enchant: 'Запретные: {enchant}'
+    claimed_item: 'Получен предмет: {item}.'
+    return_label: Назад
+    return_lore: Вернуться ко всем чарам.
+    categories:
+      all: Все
+      armors: Броня
+      weapons: Оружие
+      totems: Тотемы
+      books: Книги
+      potions: Зелья
+      other: Разное
+  bundle:
+    root_title: Редактор мешочков с лутом
+    root_enchant_rewards: 'Награды: Чары'
+    root_potion_rewards: 'Награды: Зелья'
+    root_loot_rewards: 'Награды: Лут'
+    root_bundle_contents: Содержимое мешочка
+    root_extra_drops: Дополнительный лут
+    mobs_title: Мобы с мешочками (шанс на моба)
+    enchants_title: Чары в награду
+    potions_title: Зелья в награду
+    loot_title: Лут в награду
+    rewards_title: Текущие награды мешочка
+    extra_title: Дополнительные нескладываемые предметы
+    state:
+      enabled: Включено
+      disabled: Выключено
+    back_label: Назад
+    back_lore: Вернуться в редактор мешочков.
+    entry:
+      index_line: 'Индекс: {index}'
+      material_left_right: 'ЛКМ/ПКМ: +/- количество'
+      material_shift_left_right: 'Shift + ЛКМ/ПКМ: +/-8'
+      duplicate_reward: 'ЛКМ: дублировать эту награду'
+      middle_remove: 'СКМ: удалить'
+    extra:
+      left_duplicate: 'ЛКМ: дублировать'
+      right_middle_remove: 'ПКМ/СКМ: удалить'
+    mobs:
+      chance_line: 'Шанс: {chance}'
+      left_right: 'ЛКМ/ПКМ: +/-1% (Shift +/-5%)'
+      middle_toggle: 'СКМ: вкл/выкл (базовый шанс)'
+    root:
+      enabled_label: 'Дроп мешочков: {state}'
+      default_chance_label: 'Базовый шанс моба: {chance}'
+      mobs_label: Выбор мобов и шансов
+      capacity_label: 'Вместимость мешочка: {used}/64'
+      enabled_lore: Клик для переключения системы дропа.
+      default_chance_lore_1: Используется при включении мобов через СКМ.
+      default_chance_lore_2: 'ЛКМ/ПКМ: +/-1% (Shift +/-5%)'
+      default_chance_lore_3: 'СКМ: сбросить на 5%'
+      mobs_selected_lore: 'Мобов с шансом > 0: {selected}'
+      capacity_lore_1: Показывает заполненность мешочка.
+      capacity_lore_2: Нескладываемые предметы занимают много места.
+      open_editor_lore: Клик, чтобы открыть
+      clear_label: Очистить настройку мешочка
+      clear_lore: Удаляет мобов, награды и дополнительный лут.
+      close_label: Закрыть
+      quick_flow_label: Быстрая настройка
+      quick_flow_lore_1: 1) Настройте шансы мобов
+      quick_flow_lore_2: 2) Настройте награды мешочка
+      quick_flow_lore_3: 3) Добавьте нескладываемый лут (по желанию)
+    page_info:
+      label: Управление
+      loot_lore_1: Кликайте по списку для добавления лута.
+      extra_lore_1: Добавьте нескладываемые предметы к дропу.
+      inventory_import: 'Из инвентаря: клик/Shift-клик для импорта.'
+      rewards_lore_1: 'ЛКМ/ПКМ: настройка количества.'
+      rewards_lore_2: 'СКМ: удалить запись.'
+      rewards_lore_3: 'Импорт: клик/Shift-клик по предметам инвентаря.'
+      default_lore: Кликайте по предметам для изменения.
+    import_hint:
+      label: Импорт из инвентаря
+      lore_1: Перетащите в меню или кликайте по предметам ниже.
+      extra_lore: Дополнительный лут принимает только нескладываемые предметы.
+      rewards_lore: Импортированные вещи станут наградами в мешочке.
+      loot_lore: Импортированный лут объединяется по типу материала.
+  injector:
+    title_prefix: 'Инжектор структур '
+    mode_configured: (Настроено)
+    mode_all: (Все)
+    rarity_title: Редактор редкости чар
+    nav_prev_label: << Назад
+    nav_next_label: Вперед >>
+    mode_switch_all_label: 'Режим: Все структуры'
+    mode_switch_configured_label: 'Режим: Только настроенные'
+    state:
+      enabled: Включено
+      disabled: Выключено
+    enabled_pane_label: 'Инжектор: {state}'
+    rarity_pane_label: Редактор редкости чар
+    notify_pane_label: 'Сообщение в сундуке: {state}'
+    clear_pane_label: Очистить все структуры
+    entry:
+      configured_chance_line: 'Настроенный шанс: {chance}'
+      not_configured: Не настроено
+      loot_type_line: 'Тип лута: {type}'
+      curse_state_line: 'Состояние проклятий: {state}'
+      mystery_state_line: 'Состояние тайны: {state}'
+      vault_hint: Действует как запись инжектора структур.
+      combined_mode_line: 'Комбинированный режим: {loot_mode} + {mystery_state}'
+      mode_line: 'Режим: {mode}'
+      mode_configured_only: Только настроенные
+      mode_all_structures: Все структуры
+      left_click: 'ЛКМ: +1% (+0.1% ниже 1%)'
+      shift_left_click: 'Shift+ЛКМ: +5% (+0.5% ниже 5%)'
+      right_click: 'ПКМ: -1% (-0.1% ниже 1%, мин. 0.1%)'
+      middle_remove_entry: 'СКМ: удалить запись (установить 0%)'
+      middle_remove_structure: 'СКМ: удалить структуру'
+      drop_cycle_type: 'Q: переключить тип лута'
+      ctrl_drop_cycle_curse: 'Ctrl+Q: переключить проклятия'
+      offhand_cycle_mystery: 'F: переключить режим тайны'
+    mode_pane_lore: Клик для смены режима просмотра.
+    enabled_pane_lore: Клик для переключения глобального инжектора.
+    rarity_pane_lore_1: Клик для настройки веса редкости каждого уровня чар.
+    rarity_pane_lore_2: 'Выше вес: чаще выпадает в книгах инжектора.'
+    notify_pane_lore: Клик для переключения сообщений при наполнении сундука.
+    clear_pane_lore: Клик для удаления всех настроенных структур.
+    rarity:
+      nav_prev_label: << Назад
+      nav_next_label: Вперед >>
+      reset_label: Сбросить все веса
+      back_label: Назад в инжектор
+      state:
+        true: ВКЛ
+        false: ВЫКЛ
+      entry:
+        spawn_line: 'Генерация включена: {state}'
+        weight_line: 'Вес: {weight}{suffix}'
+        weight_disabled_suffix: ' (отключено)'
+        rarity_weight_line: 'Вес редкости: {weight}'
+        weight_usage: Относительный шанс дропа использует этот вес.
+        left_right: 'ЛКМ/ПКМ: +/-0.1 (Shift: +/-1.0)'
+        drop_scale: 'Q/Ctrl+Q: x2 / x0.5'
+        toggle_spawn: 'F: переключить генерацию'
+        double_click_disable: 'Двойной клик: 0 (отключить)'
+        middle_reset: 'СКМ: сбросить на 1.0'
+      reset_lore: Клик для сброса всех весов редкости на 1.0.
+      back_lore: Вернуться в /fe injector gui.
+      apply_items_label: 'Применять веса к зачарованным предметам: {state}'
+      apply_items_on: 'ВКЛ: веса влияют на книги и предметы.'
+      apply_items_off: 'ВЫКЛ: веса влияют только на книги.'
+  librarian:
+    title_prefix: 'Торговля жителей '
+    mode_all: (Все книги)
+    mode_configured: (Настроено)
+    nav_prev_label: << Назад
+    nav_next_label: Вперед >>
+    mode_switch_all_label: 'Режим: Все книги'
+    mode_switch_configured_label: 'Режим: Настроенные'
+    state:
+      enabled: Включено
+      disabled: Выключено
+    enabled_pane_label: 'Торговля библиотекарей: {state}'
+    clear_pane_label: Очистить все настроенные сделки
+    entry:
+      not_configured: Не настроено
+      left_enable: 'ЛКМ: включить и +1% шанс'
+      shift_left_enable: 'Shift+ЛКМ: включить и +5% шанс'
+      right_adjust: 'ПКМ: -1% (-0.1% ниже 1%, мин. 0.1%)'
+      drop_emerald: 'Q/Ctrl+Q: +/- изумруды'
+      offhand_book: 'F: +книги'
+      middle_clear: 'СКМ: очистить запись'
+      chance_line: 'Шанс: {chance}'
+      cost_line: 'Цена: {emeralds} изумр.{books_part}'
+      cost_books_suffix: ' + {books} кн.'
+      left_right: 'ЛКМ/ПКМ: +/- шанс (шаг 0.1% ниже 1%)'
+      shift_left_right: 'Shift + ЛКМ/ПКМ: +/-5% (шаг 0.5% ниже 5%)'
+      middle_disable: 'СКМ: отключить эту сделку'
+      mode_line: 'Режим: {mode}'
+      mode_all_books: Все книги
+      mode_configured: Настроено
+    mode_pane_lore: Клик для переключения режима списка.
+    enabled_pane_lore: Клик для переключения торговли жителей.
+    clear_pane_lore: Клик для отключения всех настроенных сделок библиотекарей.
+  enchanting:
+    title_prefix: 'Инжектор стола зачарований '
+    mode_all: (Все книги)
+    mode_configured: (Настроено)
+    nav_prev_label: << Назад
+    nav_next_label: Вперед >>
+    mode_switch_all_label: 'Режим: Все книги'
+    mode_switch_configured_label: 'Режим: Настроенные'
+    state:
+      enabled: Включено
+      disabled: Выключено
+    enabled_pane_label: 'Инжектор стола зачарований: {state}'
+    clear_pane_label: Очистить все настроенные книги
+    xp_pane_label: 'Стоимость опыта: {xp}'
+    xp_pane_lore_1: 'ЛКМ/ПКМ: +/-1 XP (Shift +/-5)'
+    xp_pane_lore_2: 'СКМ: сбросить на 35'
+    entry:
+      not_configured: Не настроено
+      left_enable: 'ЛКМ: включить и +1% шанс'
+      shift_left_enable: 'Shift+ЛКМ: включить и +5% шанс'
+      right_adjust: 'ПКМ: -1% (-0.1% ниже 1%, мин. 0.1%)'
+      middle_clear: 'СКМ: очистить запись'
+      chance_line: 'Шанс: {chance}'
+      left_right: 'ЛКМ/ПКМ: +/- шанс (шаг 0.1% ниже 1%)'
+      shift_left_right: 'Shift + ЛКМ/ПКМ: +/-5% (шаг 0.5% ниже 5%)'
+      middle_disable: 'СКМ: отключить эту книгу'
+      mode_line: 'Режим: {mode}'
+      mode_all_books: Все книги
+      mode_configured: Настроено
+    mode_pane_lore: Клик для переключения режима списка.
+    enabled_pane_lore: Клик для переключения инжекции стола зачарований.
+    clear_pane_lore: Клик для отключения всех настроенных книг стола зачарований.
+  toggles:
+    title: Переключение чар
+    state:
+      enabled: Включено
+      disabled: Выключено
+    entry:
+      use_line: 'Использование: {state}'
+      spawn_line: 'Появление в луте: {state}'
+      slot_line: 'Слот: {slot}'
+      left_click: 'ЛКМ: переключить использование'
+      right_click: 'ПКМ: переключить появление в сундуках/хранилищах'
+      middle_click: 'СКМ: переключить оба параметра'
+fe:
+  prefix: '[Forbidden Enchants] '
+  help:
+    header: Администрирование Forbidden Enchants
+    help_desc: Показать справку по командам.
+    list_desc: Список чар и уровней.
+    gui_desc: Открыть меню выбора предметов.
+    give_desc: Выдать книгу чар.
+    givebook_desc: Выдать конкретную книгу чар.
+    giveitem_desc: Выдать зачарованное снаряжение.
+    mysterybook_desc: Выдать случайную скрытую книгу чар для слота.
+    mysteryitem_desc: Выдать случайный скрытый зачарованный предмет.
+    reload_desc: Перезагрузить config.yml и messages.yml.
+    injector_desc: Управление инжекцией лута в структуры.
+    librarian_desc: Редактор и управление торговлей запретными книгами.
+    enchanting_desc: Редактор стола зачарований для запретных книг.
+    bundle_desc: Редактор и управление мешочками мобов.
+    join_desc: Редактор наград при входе для стартовых наборов.
+    toggles_desc: Переключение доступности чар и генерации в сундуках/хранилищах.
+  list:
+    header: Запретные чары
+  command:
+    no_permission: У вас нет прав (forbiddenenchants.admin).
+    unknown_subcommand: Неизвестная подкоманда. Используйте /{label} help
+    player_not_found: 'Игрок не найден: {player}'
+    console_needs_target: Из консоли необходимо указать целевого игрока.
+    unknown_enchant: 'Неизвестные чары: {enchant}'
+    level_not_number: Уровень должен быть числом.
+    level_out_of_range: Уровень для {enchant} должен быть в диапазоне 1-{max}.
+    usage_give: 'Использование: /fe give <чары> <уровень> [игрок]'
+    gave_book: Выдана книга {enchant} {level} игроку {player}.
+    you_received_book: Вы получили книгу {enchant} {level}.
+    usage_giveitem: 'Использование: /fe giveitem <чары> <уровень> <материал> [игрок]'
+    unknown_material: 'Неизвестный материал: {material}'
+    invalid_material_for_enchant: '{enchant} требует слот {category}.'
+    could_not_build_item: Не удалось создать зачарованный предмет.
+    gave_item: Выдан предмет {item} с {enchant} {level} игроку {player}.
+    usage_mysterybook: 'Использование: /fe mysterybook <слот> [игрок]'
+    unknown_slot: 'Неизвестный слот: {slot}'
+    gave_mystery_book: Выдана таинственная книга зачарования ({slot}) игроку {player}.
+    usage_mysteryitem: 'Использование: /fe mysteryitem <материал> [игрок]'
+    no_enchant_for_material: Для {material} нет подходящих запретных чар.
+    gave_mystery_item: Выдан таинственный предмет {material} игроку {player}.
+    usage_gui: 'Использование: /fe gui [игрок]'
+    opened_gui_for_player: Открыто меню Forbidden Enchants для {player}.
+    usage_toggles: 'Использование: /fe toggles [игрок]'
+    opened_toggles_for_player: Открыто меню переключения чар для {player}.
+    reloaded: Конфигурация и сообщения Forbidden Enchants перезагружены.
+join:
+  command:
+    help_header: 'Команды наград при входе:'
+    help_line_1: ' - /fe join status | list'
+    help_line_2: ' - /fe join enable | disable'
+    help_line_3: ' - /fe join mode <first|every>'
+    help_line_4: ' - /fe join delivery <inventory|equip|consume>'
+    help_line_5: ' - /fe join message <on|off|status|set|reset>'
+    help_line_6: ' - /fe join world <мир|all|off|status>'
+    help_line_7: ' - /fe join add <чары> <уровень> <материал> [кол-во] | /fe join add <материал> [кол-во]'
+    help_line_8: ' - /fe join remove <индекс>'
+    help_line_9: ' - /fe join clear'
+    status: 'Награды при входе: {enabled} | режим={mode} | выдача={delivery} | сообщение={message} | предметов={items}'
+    enabled: Награды при входе включены.
+    disabled: Награды при входе выключены.
+    usage_mode: 'Использование: /fe join mode <first|every>'
+    unknown_mode: 'Неизвестный режим: {mode}'
+    mode_set: 'Установлен режим наград: {mode}.'
+    usage_delivery: 'Использование: /fe join delivery <inventory|equip|consume>'
+    unknown_delivery: 'Неизвестный тип выдачи: {mode}'
+    delivery_set: 'Установлен тип выдачи наград: {mode}.'
+    usage_message: 'Использование: /fe join message <on|off|status|set|reset>'
+    usage_message_set: 'Использование: /fe join message set <сообщение>'
+    message_status: 'Сообщение при входе: {state}.'
+    message_on: Сообщение при входе включено.
+    message_off: Сообщение при входе выключено.
+    message_reset: Сообщение при входе сброшено по умолчанию.
+    message_set: 'Сообщение при входе установлено: {message}'
+    unknown_message: 'Неизвестный параметр сообщения: {mode}'
+    usage_world: 'Использование: /fe join world <мир|all|off|status>'
+    world_status: 'Мир наград при входе: {world}.'
+    world_all: Награды теперь действуют во всех мирах.
+    world_set: 'Мир наград установлен: {world}.'
+    world_console: Из консоли необходимо указать название мира.
+    world_line: 'Мир: {world}'
+    message_line: 'Сообщение: {message}'
+    usage_add: 'Использование: /fe join add <чары> <уровень> <материал> [кол-во] | /fe join add <материал> [кол-во]'
+    unknown_material: 'Неизвестный материал или чары: {value}'
+    added_item: Добавлен предмет {item} x{amount} в награды.
+    added_enchant: Добавлен предмет с {enchant} {level} x{amount} в награды.
+    usage_remove: 'Использование: /fe join remove <индекс>'
+    index_out_of_range: Индекс вне допустимого диапазона.
+    index_not_number: Индекс должен быть числом.
+    amount_range: Количество должно быть от 1 до 64.
+    amount_number: Количество должно быть числом.
+    removed_item: Удален предмет {item} x{amount} из наград.
+    cleared: Все награды при входе очищены.
+    no_items: Награды при входе не настроены.
+    item_line: '{index}. {item} x{amount}'
+    item_enchant: Предмет с чарами {enchant} {level}
+    join_reward_given: 'Выдана награда за вход: '
+bundle:
+  command:
+    usage_chance: 'Использование: /fe bundle chance <0-100>'
+    chance_range: Шанс должен быть от 0 до 100.
+    usage_gui: 'Использование: /fe bundle gui [игрок]'
+    unknown_subcommand: Неизвестная подкоманда. Используйте /fe bundle help
+    help_header: 'Команды дропа мешочков:'
+    help_line_1: ' - /fe bundle status'
+    help_line_2: ' - /fe bundle enable | disable'
+    help_line_3: ' - /fe bundle chance <0-100>'
+    help_line_4: ' - /fe bundle gui [игрок]'
+    help_line_5: ' - /fe bundle clear'
+    player_not_found: 'Игрок не найден: {player}'
+    console_needs_target: Из консоли необходимо указать целевого игрока.
+enchanting:
+  command:
+    usage_gui: 'Использование: /fe enchanting gui [игрок]'
+    usage_add: 'Использование: /fe enchanting add <чары> <уровень> <шанс>'
+    usage_remove: 'Использование: /fe enchanting remove <индекс>'
+    usage_xp: 'Использование: /fe enchanting xp <1-60>'
+    unknown_subcommand: Неизвестная подкоманда. Используйте /fe enchanting help
+    help_header: 'Команды инжектора стола зачарований:'
+    help_line_1: ' - /fe enchanting status | list'
+    help_line_2: ' - /fe enchanting enable | disable'
+    help_line_3: ' - /fe enchanting gui [игрок]'
+    help_line_4: ' - /fe enchanting add <чары> <уровень> <шанс>'
+    help_line_5: ' - /fe enchanting remove <индекс>'
+    help_line_6: ' - /fe enchanting clear'
+    help_line_7: ' - /fe enchanting xp <1-60>'
+    xp_cost_range: Стоимость опыта должна быть от 1 до 60.
+    player_not_found: 'Игрок не найден: {player}'
+    console_needs_target: Из консоли необходимо указать целевого игрока.
+librarian:
+  command:
+    usage_gui: 'Использование: /fe librarian gui [игрок]'
+    usage_add: 'Использование: /fe librarian add <чары> <уровень> <шанс> <изумруды> [книги]'
+    usage_remove: 'Использование: /fe librarian remove <индекс>'
+    index_out_of_range: Индекс вне диапазона. Используйте /fe librarian list.
+    unknown_subcommand: Неизвестная подкоманда. Используйте /fe librarian help
+    help_header: 'Команды торговли библиотекарей:'
+    help_line_1: ' - /fe librarian status | list'
+    help_line_2: ' - /fe librarian enable | disable'
+    help_line_3: ' - /fe librarian gui [игрок]'
+    help_line_4: ' - /fe librarian add <чары> <уровень> <шанс> <изумруды> [книги]'
+    help_line_5: ' - /fe librarian remove <индекс>'
+    help_line_6: ' - /fe librarian clear'
+    unknown_enchant: 'Неизвестные чары: {enchant}'
+    level_out_of_range: Уровень для {enchant} должен быть в диапазоне 1-{max}.
+    chance_range: Шанс должен быть от 0 до 100.
+    cost_range: Поле {field} должно быть от 1 до 64.
+    book_cost_range: Количество книг должно быть от 0 до 64.
+    index_not_number: Индекс должен быть числом.
+    player_not_found: 'Игрок не найден: {player}'
+    console_needs_target: Из консоли необходимо указать целевого игрока.
+injector:
+  help:
+    header: Инжектор структур
+    commands: 'Команды:'
+    status_desc: Показать статус, базовый шанс и список структур.
+    vault_desc: Настройка обычных и зловещих хранилищ.
+    enable_desc: Переключение инжекции лута в структуры.
+    gui_desc: Открыть визуальный редактор структур и шансов.
+    add_desc: Добавить одну или несколько структур через запятую.
+    set_desc: Установить точный % шанса для структуры.
+    mode_desc: Установить/просмотреть режим лута структуры.
+    mode_direct_desc: Напрямую задать тип лута, проклятия и режим тайны.
+    mystery_desc: Переключение режима таинственности.
+    notify_desc: Переключение сообщений при добавлении лута в сундук.
+    remove_desc: Удалить одну или несколько структур.
+    default_desc: Базовый % шанса для операций add/gui.
+    clear_desc: Удалить все настроенные структуры.
+  status:
+    header: 'Инжектор структур: '
+    default_chance: 'Базовый шанс: '
+    chest_message: 'Сообщение в сундуке: '
+    vault: 'Инжектор хранилищ: '
+    no_structures: Нет настроенных структур.
+  added_actionbar: 'Инжектор структур: добавлен {item} ({structure}, {loot_mode}, {mystery_state}).'
+  vault_discovered: 'Вы обнаружили новые запретные чары: {item}.'
+locked_out:
+  nether_portal_blocked: Запертый портал в Незер разрушен.
+  end_portal_blocked: Вам закрыт доступ к порталу.
+charmed_pet:
+  sit: '{pet} сидит.'
+  follow: '{pet} следует за вами.'
+  sneak_to_leash: Присядьте и нажмите ПКМ, чтобы привязать жителя.
+  removed_leash: Поводок снят с {pet}.
+  bound: Очарованный питомец привязан.
+applied_curse:
+  set_name: Примененное проклятие установлено на {name}
+  target_notified: Ваше имя было проклято.
+  broadcast_mid_1: ' проклял '
+  broadcast_mid_2: ' через '
+  broadcast_suffix: .
+petty_thief:
+  stole_attacker: Мелкий воришка украл {item}.
+  stole_victim: Предмет был украден из вашего инвентаря!
+  pulled_from_mob: Мелкий воришка забрал {item} у {mob}.
+enchants:
+  administrative_aspirations:
+    mob_teleport: Административные амбиции телепортировали моба на спавн.
+    level_two_ban: Бан мечом Административных амбиций на 5 минут
+    level_one_kick: Кик мечом Административных амбиций
+  disarm:
+    triggered: Разоружение сработало.
+  greed:
+    prevent_drop: Жадность не позволяет выбросить предметы.
+  kismet:
+    double_drops: 'Судьба Кисмет: удвоенный дроп.'
+    no_drops: 'Судьба Кисмет: дроп отсутствует.'
+  masquerade:
+    no_nearby_mob: 'Маскарад: рядом нет моба для копирования.'
+    started: 'Маскарад: {mob}'
+    ended: Маскарад завершен.
+  pocket_dimension:
+    triggered: Карманное измерение сработало!
+  sonic_panic:
+    blade_shattered: Звуковая паника разрушила ваш клинок!
+  temporal_sickness:
+    broken: Временная болезнь рассеялась.
+    warped: Временная болезнь исказила пространство вокруг вас.
+  the_seeker:
+    tracking: '{player} {distance}м'
+  wing_clipper:
+    prevent_equip: Подрезатель крыльев запрещает надевать элитры.
+    ripped_elytra: Подрезатель крыльев сорвал ваши элитры.
+spells:
+  infected:
+    no_targets: 'Заражение: рядом нет подходящих целей.'
+  joint_sleep:
+    warped: 'Совместный сон: перемещение к общей кровати.'
+    placed_beds: 'Совместный сон: установлены 2 кровати рядом.'
+    gave_beds: 'Совместный сон: нет места для кроватей, выдано 2 кровати.'
